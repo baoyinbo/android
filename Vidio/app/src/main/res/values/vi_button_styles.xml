@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="btn_rectangle_lightgreen_border_white_bg" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/vi_selector_btn_direct_corner_lightgreen_border_white_bg</item>
+        <item name="android:textAppearance">@style/text_16_light_green</item>
+        <item name="android:minHeight">41dip</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+
+    <style name="btn_rectangle_light_green" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/vi_selector_btn_light_green_bg</item>
+        <item name="android:textAppearance">@style/text_16_white</item>
+        <item name="android:minHeight">41dip</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+
+    <style name="btn_corner_light_green" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/vi_selector_btn_light_green_corner_border</item>
+        <item name="android:textAppearance">@style/text_14_black</item>
+        <item name="android:minHeight">41dip</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+    <style name="btn_corner_white" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/vi_selector_btn_white_corner_border</item>
+        <item name="android:textAppearance">@style/text_12_light_green</item>
+        <item name="android:minHeight">41dip</item>
+        <item name="android:minWidth">80dip</item>
+    </style>
+</resources>

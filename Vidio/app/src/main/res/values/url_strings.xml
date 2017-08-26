@@ -1,0 +1,11 @@
+<resources>
+    <!--例子-->
+    <string name="url_lizi">toutiao/get_list</string>
+
+    <string name="url_login">/http/auth/register.action</string>
+
+
+    <string name="url_zb_test">/bestchat/user</string>
+
+    <string name="url_zb_test_get">/bestchat/user?username=</string>
+</resources>

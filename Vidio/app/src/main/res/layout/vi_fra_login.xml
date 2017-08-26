@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#7f7f7f"/>
+            <LinearLayout
+                android:id="@+id/llLoginInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height_default"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginLeft="@dimen/btn_horizontal_margin"
+                    android:layout_marginRight="@dimen/btn_horizontal_margin">
+                    <EditText
+                        android:id="@+id/etPhoneAccount"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:inputType="phone"
+                        style="@style/vi_et_14sp_gray_text_transparent_bg"
+                        android:hint="@string/login_phone"/>
+
+                    <TextView
+                        android:id="@+id/tvGetCode"
+                        style="@style/text_14_green"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/login_get_code"
+                        android:gravity="center"
+                        android:background="@drawable/vi_item_background_white"/>
+                </LinearLayout>
+                <include layout="@layout/vi_comm_divide_margin"/>
+                <EditText
+                    android:id="@+id/etLoginCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height_default"
+                    style="@style/vi_et_14sp_gray_text_transparent_bg"
+                    android:hint="@string/login_code"
+                    android:layout_marginLeft="@dimen/btn_horizontal_margin"
+                    android:layout_marginRight="@dimen/btn_horizontal_margin"/>
+                <include layout="@layout/vi_comm_divide_margin"/>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/btn_corner_light_green"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="@dimen/btn_horizontal_margin"
+                    android:layout_marginRight="@dimen/btn_horizontal_margin"
+                    android:text="@string/login_btn_next"/>
+
+                <TextView
+                    android:id="@+id/tvLoginPwd"
+                    style="@style/text_14_light_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_phone_pwd"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="23dp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

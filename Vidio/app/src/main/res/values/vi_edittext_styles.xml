@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="wlh_et_black_and_lightgray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textColorHint">@color/text_light_gray</item>
+        <item name="android:textSize">@dimen/font_14sp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="wlh_et_login">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/white_pressed</item>
+        <item name="android:textSize">@dimen/font_14sp</item>
+    </style>
+
+    <style name="vi_et_14sp_gray_text_transparent_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textColorHint">@color/text_gray</item>
+        <item name="android:textSize">@dimen/font_14sp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

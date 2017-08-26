@@ -1,0 +1,14 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/themes.xml and
+        res/values-v11/themes.xml on API 14+ devices.
+    -->
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:toolbarStyle">@style/wlh_toolsBarStyle</item>
+    </style>
+</resources>

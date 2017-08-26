@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <!--ActionBar颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--StatusBar颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--背景透明，不设滑动关闭时背景就是黑的。-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--Activity右滑进出的动画，觉得这个不好看随便换成自己的-->
+        <item name="android:windowAnimationStyle">@style/SlideRightAnimation</item>
+        <!--<item name="android:selectableItemBackground">@drawable/wj_item_background_transparent</item>-->
+
+        <!--下面是按钮相关-->
+        <item name="android:buttonStyle">@style/btn_corner_light_green</item>
+        <item name="buttonStyle">@style/btn_corner_light_green</item>
+
+        <!--下面字体相关-->
+        <item name="android:textAppearanceSmall">@style/text_14_black</item>
+        <item name="android:includeFontPadding">false</item>
+
+        <!--下面是editText相关-->
+
+        <!--下面是actionBar相关-->
+        <item name="actionBarSize">@dimen/tools_bar_height</item>
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <item name="toolbarStyle">@style/wlh_toolsBarStyle</item>
+        <!--<item name="actionOverflowMenuStyle">@style/ToolsBar_OverflowMenuStyle</item>-->
+
+        <!--下面是progressBar的style-->
+        <!--<item name="android:progressBarStyle">@style/WlhProgressbarStyle</item>-->
+
+    </style>
+
+    <style name="AppTheme" parent="@style/BaseAppTheme">
+
+    </style>
+
+    <style name="ViAppTheme" parent="AppTheme">
+
+    </style>
+
+    <style name="MainTheme" parent="ViAppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@style/Window.Animation</item>
+    </style>
+
+</resources>

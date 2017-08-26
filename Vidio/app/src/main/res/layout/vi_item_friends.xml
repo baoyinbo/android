@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rlFriendItem"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground">
+        <ImageView
+            android:id="@+id/ivHead"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/text_14_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivHead"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:text="张三"/>
+        <TextView
+            android:id="@+id/tvDescription"
+            style="@style/text_11_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivHead"
+            android:layout_below="@id/tvName"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:text="张三张三张三张三张三张三"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="74dp"
+            android:background="@color/divide_gray"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llEdit"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/bg_green">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="16dp" />
+        <TextView
+            style="@style/text_9_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/friend_edit_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDelete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/bg_red">
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_delete"
+            />
+        <TextView
+            style="@style/text_9_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/friend_delete" />
+    </LinearLayout>
+</LinearLayout>

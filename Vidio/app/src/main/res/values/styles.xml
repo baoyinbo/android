@@ -1,0 +1,14 @@
+<resources>
+    <style name="ToolsBar_ThemeOverlay" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:actionMenuTextColor">@color/text_black</item>
+        <item name="actionMenuTextColor">@color/text_black</item>
+    </style>
+
+    <style name="Window.Animation" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_window_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_window_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_window_close_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_window_close_out</item>
+    </style>
+
+</resources>
